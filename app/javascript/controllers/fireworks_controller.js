@@ -1,15 +1,21 @@
 import { Controller } from "@hotwired/stimulus";
-
 import { Fireworks } from "fireworks-js";
 
 export default class extends Controller {
+  static targets = ["container"];
+
   connect() {
-    const container = document.querySelector("#fireworks-container");
-    const fireworks = new Fireworks(container, {
-      /* options
-        https://github.com/crashmax-dev/fireworks-js?tab=readme-ov-file#options
-      */
-    });
-    fireworks.start();
+    this.fireworks = new Fireworks(this.containerTarget, {});
+    this.start();
+  }
+
+  start() {
+    this.fireworks.start();
+    console.log("fireworks started");
+  }
+
+  stop() {
+    this.fireworks.stop();
+    console.log("fireworks stopped");
   }
 }

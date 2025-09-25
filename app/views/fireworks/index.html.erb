@@ -1,3 +1,12 @@
 <h1> Hotwire Stimulus for Ruby on Rails </h1>
 
-<div id="fireworks-container" data-controller="fireworks" style="width: 100%; height: 400px; background-color: black;"></div>
+<p>
+  This is a demo Ruby on Rails app using Hotwire Stimulus for the front-end JavaScript.
+</p>
+
+<div data-controller="fireworks" >
+  <button data-action="click->fireworks#start"> Launch Fireworks </button>
+  <button data-action="click->fireworks#stop"> Stop Fireworks </button>
+  <br><br>
+  <div data-fireworks-target="container" style="width: 100%; height: 400px; background-color: black;"></div>
+</div>

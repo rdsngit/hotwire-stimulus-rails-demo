@@ -1,0 +1,1 @@
+# hotwire-stimulus-rails-demo

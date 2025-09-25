@@ -1,1 +1,1 @@
-# hotwire-stimulus-rails-demo
+# Hotwire Stimulus for Ruby on Rails

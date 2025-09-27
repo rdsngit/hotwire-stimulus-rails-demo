@@ -1,5 +1,4 @@
 import { Controller } from "@hotwired/stimulus";
-
 import { Fireworks } from "fireworks-js";
 
 export default class extends Controller {

@@ -6,11 +6,7 @@ export default class extends Controller {
   static targets = ["container"];
 
   connect() {
-    this.fireworks = new Fireworks(this.containerTarget, {
-      /* options
-        https://github.com/crashmax-dev/fireworks-js?tab=readme-ov-file#options
-      */
-    });
+    this.fireworks = new Fireworks(this.containerTarget, {});
     this.start();
   }
 

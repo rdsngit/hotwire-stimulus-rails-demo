@@ -30,7 +30,7 @@ The fireworks visual effects are created using fireworks.js
 
 The JavaScript to load, start and stop the fireworks are located in the Stimulus controller at [`app/javascript/controllers/fireworks_controller.js`](app/javascript/controllers/fireworks_controller.js).
 
-https://github.com/rdsngit/hotwire-stimulus-rails-demo/blob/480a53f3d668ae762764401478d5e8827a2dfc39/app/javascript/controllers/fireworks_controller.js#L1-L26
+https://github.com/rdsngit/hotwire-stimulus-rails-demo/blob/dc581500cda3701b76135e081b5de400a8c8b8f0/app/javascript/controllers/fireworks_controller.js#L1-L21
 
 This Stimulus controller is activated by setting the `data` attribute in the fireworks index view and within this `div` are the buttons with the `data` actions to call the fireworks controller's `start` and `stop` functions as well as the `div` used for the controller target to render the fireworks within.
 

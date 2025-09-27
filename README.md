@@ -21,12 +21,20 @@ Then open your internet browser, such as Chrome, and visit `http://localhost:300
 
 Click on the buttons to start and stop the fireworks and you can see the JavaScript console logs using your browser dev tools.
 
-## Fireworks library
+## Libraries used
 
 The fireworks visual effects are created using fireworks.js
 
 - https://fireworks.js.org/
 - https://github.com/crashmax-dev/fireworks-js/
+
+The JavaScript to load, start and stop the fireworks are located in the Stimulus controller at [`app/javascript/controllers/fireworks_controller.js`](app/javascript/controllers/fireworks_controller.js).
+
+https://github.com/rdsngit/hotwire-stimulus-rails-demo/blob/480a53f3d668ae762764401478d5e8827a2dfc39/app/javascript/controllers/fireworks_controller.js#L1-L26
+
+This Stimulus controller is activated by setting the `data` attribute in the fireworks index view and within this `div` are the buttons with the `data` actions to call the fireworks controller's `start` and `stop` functions as well as the `div` used for the controller target to render the fireworks within.
+
+https://github.com/rdsngit/hotwire-stimulus-rails-demo/blob/480a53f3d668ae762764401478d5e8827a2dfc39/app/views/fireworks/index.html.erb#L7-L12
 
 ## Screenshots
 

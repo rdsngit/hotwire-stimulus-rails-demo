@@ -38,7 +38,7 @@ The demo app implements Stimulus controllers along with actions and targets that
 - https://stimulus.hotwired.dev/reference/actions
 - https://stimulus.hotwired.dev/reference/targets
 
-This Stimulus controller is activated by setting the `data` attribute in the fireworks index view and within this `div` are the buttons with the `data` actions to call the fireworks controller's `start` and `stop` functions as well as the `div` used for the controller target to render the fireworks within.
+This Stimulus controller is activated by setting the `data` attribute in the fireworks index view and within this `div` are the buttons with the `data` `actions` to call the fireworks controller's `start` and `stop` functions as well as the fireworks container `div` used for the controller `target` to render the fireworks within.
 
 https://github.com/rdsngit/hotwire-stimulus-rails-demo/blob/480a53f3d668ae762764401478d5e8827a2dfc39/app/views/fireworks/index.html.erb#L7-L12
 
